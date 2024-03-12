@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+    @apply px-3 py-2 mx-2 text-white;
+}
+
+.btn:disabled {
+    @apply bg-gray-300;
+}
+
+.btn.main {
+    @apply bg-indigo-600 rounded-lg hover:bg-indigo-800 active:bg-indigo-900;
+}
+
+.btn.main:disabled {
+    @apply bg-gray-600;
+}
+
+.btn.sub {
+    @apply text-indigo-600 border-2 border-solid border-indigo-600 rounded-lg hover:border-indigo-800 active:border-indigo-900;
+}
+
+.btn.sub:disabled {
+    @apply border-2 border-solid border-gray-600 text-gray-600;
+}
+
+.card {
+    @apply bg-white p-5 rounded-lg mx-2 my-2;
+}
